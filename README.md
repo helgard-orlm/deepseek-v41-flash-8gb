@@ -12,6 +12,8 @@ generated tokens stayed identical to the plain version: **136/136 tokens** on th
 
 Batch size 1, text only (vision and MTP are not wired in). Code comments are in Russian.
 
+Write-up with the story and measurements: [dev.to post](https://dev.to/helgard_orlm/running-the-510-gb-deepseek-v41-flash-on-an-8-gb-gpu-and-three-bugs-that-never-raise-an-error-5647).
+
 ## Hardware it was built on
 
 | part | value |
