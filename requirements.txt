@@ -1,0 +1,9 @@
+torch==2.11.0          # the one we run: 2.11.0+cu128 (Blackwell sm_120)
+tilelang==0.1.9        # NOT 0.1.8 (pinned by the reference): 0.1.8 silently returns garbage on sm_120
+apache-tvm-ffi==0.1.9  # 0.1.14 fails on import with tilelang 0.1.9
+transformers==5.18.0
+tokenizers
+safetensors
+numpy
+Pillow
+z3-solver              # tilelang needs its lib/ on LD_LIBRARY_PATH

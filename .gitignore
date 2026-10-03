@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+*.out
+inference_fix/
+encoding
+v41_result.json
