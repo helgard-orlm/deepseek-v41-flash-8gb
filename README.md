@@ -88,7 +88,12 @@ slower with the same method.
 ## Results
 
 Tokens/s of the answer, single user, average of the long answers of the 4-question check
-(all runs: tokens identical to the reference path, 136/136).
+(all runs: tokens identical to v1, 136/136).
+
+What this does and doesn't prove: the speed-ups changed nothing. DeepSeek's untouched reference program was never run
+side by side — it cannot load the model in 8 GB. v1 is backed instead by: it calls DeepSeek's `model.py`/`kernel.py` for
+all arithmetic; each kernel was compared with a torch implementation on real weights; `wo_a` expanded in BF16 equals
+`convert.py` bit for bit (layers 0/17/39); the answers are correct.
 
 | version | disk only | RAM cache 14 GB | prompt 311 tokens |
 |---|---|---|---|
